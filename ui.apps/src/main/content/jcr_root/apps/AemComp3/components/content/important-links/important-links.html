@@ -1,0 +1,10 @@
+Important links
+<sly data-sly-use.importantLinks="bootcamp.core.models.ImportantLinks">
+
+    <ul data-sly-list="${importantLinks.linkDetails}">
+        <li data-sly-test='${item.selecttab =="newtab"}'><a href="${item.links}" target = "_blank">${item.title}</a></li>
+        <li data-sly-test='${item.selecttab =="sametab"}'><a href="${item.links}">${item.title}</a></li>
+
+    </ul>
+
+</sly>
